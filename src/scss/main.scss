@@ -1,12 +1,48 @@
 @import "~bootstrap/scss/bootstrap";
-$btn-padding-y: 5rem;
-$primary: pink;
+$body-bg: #f2f2f2;
+$navbar-light-color: rgba(104, 104, 104, 1);
+$btn-border-radius: 15px;
 $custom-colors: (
-  "ten-per": rgba(0, 0, 0, 0.1),
-  "twenty-per": rgba(0, 0, 0, 0.2),
-  "fifty-per": rgba(0, 0, 0, 0.5),
+  "lightgrey": #adadad,
+  "mediumgrey": #686868,
+  "black": #151515,
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
 @import "~bootstrap/scss/bootstrap";
-body {
+@media (max-width: 768px) {
+  .navbar-collapse.custom-nav-display.show {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    width: 100vw;
+  }
+  .navbar-collapse.custom-nav-display.collapsing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100vh !important;
+    width: 100vw;
+  }
+  .navbar-collapse.custom-nav-display.collapsing .innernav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    @include transition($transition-collapse-width);
+  }
+
+  .navbar-collapse.custom-nav-display.show .innernav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: #f2f2f2;
+  }
 }

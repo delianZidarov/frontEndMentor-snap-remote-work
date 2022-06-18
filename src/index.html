@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <link rel="stylesheet" href="./scss/main.scss">
-  <link defer src="./js/main.js" type="module"></link:src>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
- <button class="btn btn-fifty-per">HELLO</button>
-  Features
-  Company
-  Careers
-  About
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  Login
-  Register
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Make remote work
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <script defer src="./js/main.js" type="module"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a href="/" class="navbar-brand"><img src="images/logo.svg" alt="snap" height="34" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="toggle navigation"
+          >
+            <img src="images/icon-menu.svg" alt="Menu" />
+          </button>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+          <div class="collapse navbar-collapse custom-nav-display" id="mainNav">
+            <div class="innernav">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="toggle navigation"
+              >
+                <img src="images/icon-close-menu.svg" alt="&times;" />
+              </button>
+              <ul class="navbar-nav d-flex w-100">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" id="navFeaturesDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    >Features</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="navFeaturesDrop">
+                    <li><a href="#" class="dropdown-item">Todo list</a></li>
+                    <li><a href="#" class="dropdown-item">Calendar</a></li>
+                    <li><a href="#" class="dropdown-item">Reminders</a></li>
+                    <li><a href="#" class="dropdown-item">Planning</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="" class="nav-link dropdown-toggle" id="navCompanyDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    >Company</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="navCompanyDrop">
+                    <li><a href="#" class="dropdown-item">History</a></li>
+                    <li><a href="#" class="dropdown-item">Our Team</a></li>
+                    <li><a href="#" class="dropdown-item">Blog</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-link-mediumgrey">About</a></li>
+                <li class="ms-md-auto"><button class="btn btn-link-mediumgrey">Login</button></li>
+                <li><button class="btn btn-outline-mediumgrey">Register</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    Features Company Careers About Login Register Make remote work Get your team in sync, no matter your location. Streamline processes, create team
+    rituals, and watch productivity soar. Learn more
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
