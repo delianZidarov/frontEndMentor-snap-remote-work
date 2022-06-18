@@ -23125,21 +23125,33 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 768px) {
+  .navbar-collapse.custom-nav-display {
+    height: 100vh;
+    width: 0;
+    background-color: #000000bf;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex !important;
+  }
+
   .navbar-collapse.custom-nav-display.show {
     height: 100vh;
     width: 100vw;
     background-color: #000000bf;
+    transition: all .5s;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
   }
 
   .navbar-collapse.custom-nav-display.collapsing {
     width: 100vw;
     background-color: #000000bf;
+    transition: all .5s;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100vh !important;
   }
 

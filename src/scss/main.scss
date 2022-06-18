@@ -11,21 +11,33 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "~bootstrap/scss/bootstrap";
 @media (max-width: 768px) {
+  .navbar-collapse.custom-nav-display {
+    display: flex !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    width: 0vw;
+  }
+
   .navbar-collapse.custom-nav-display.show {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.75);
     height: 100vh;
     width: 100vw;
+    transition: all 0.5s;
   }
   .navbar-collapse.custom-nav-display.collapsing {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.75);
     height: 100vh !important;
     width: 100vw;
+    transition: all 0.5s;
   }
   .navbar-collapse.custom-nav-display.collapsing .innernav {
     position: absolute;
