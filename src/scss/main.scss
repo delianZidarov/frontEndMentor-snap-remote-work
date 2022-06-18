@@ -1,0 +1,12 @@
+@import "~bootstrap/scss/bootstrap";
+$btn-padding-y: 5rem;
+$primary: pink;
+$custom-colors: (
+  "ten-per": rgba(0, 0, 0, 0.1),
+  "twenty-per": rgba(0, 0, 0, 0.2),
+  "fifty-per": rgba(0, 0, 0, 0.5),
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import "~bootstrap/scss/bootstrap";
+body {
+}
