@@ -23124,6 +23124,10 @@ textarea.form-control-lg {
   }
 }
 
+.innernav {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .navbar-collapse.custom-nav-display {
     height: 100vh;
@@ -23156,7 +23160,7 @@ textarea.form-control-lg {
   }
 
   .navbar-collapse.custom-nav-display.collapsing .innernav {
-    width: 75%;
+    width: 60%;
     height: 100vh;
     background-color: #f2f2f2;
     transition: width .35s;
@@ -23174,7 +23178,7 @@ textarea.form-control-lg {
 
 @media (max-width: 768px) {
   .navbar-collapse.custom-nav-display.show .innernav {
-    width: 75%;
+    width: 60%;
     height: 100%;
     background-color: #f2f2f2;
     position: absolute;
